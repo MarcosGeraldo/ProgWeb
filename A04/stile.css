@@ -1,0 +1,43 @@
+body{
+  background-color: lavender;
+}
+.Inicio{
+  background-color: cadetblue;
+  padding: 30px;
+
+}
+#Paragrafo1{
+  font-family: verdana;
+  font-size: 12;
+  border: 5px solid black;
+  margin-left:25%;
+  margin-right:25%;
+}
+#Paragrafo2{
+  font-family: Tahoma;
+  font-size: 14;
+  border: 5px solid red;
+  align-content: right;
+  text-align: right;
+}
+#Paragrafo3{
+  font-family: verdana;
+  color: #8B4513;
+  font-size: 12;
+  border: 5px solid black;
+  margin-left:25%;
+  margin-right:25%;
+}
+#Paragrafo4{
+  color: #FF4500;
+  font-family: Arial;
+  font-size: 12;
+  border: 5px solid red;
+}
+.foot{
+  color: white;
+  background-color: black;
+}
+#copy{
+  text-align: center;
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="../docentes_style.css" />
+  <link rel="icon" type="imagem/x-icon" href="../images/iconDecom.ico" />
+  <title>Pagina DECOM</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"><img src="../images/logoDECOM2.png"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            DECOM
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Chefia de Coordenação</a>
+            <a class="dropdown-item" href="#">Comunicação e Logo</a>
+            <a class="dropdown-item" href="#">Localização</a>
+            <a class="dropdown-item" href="#">Mapa do Campus</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Notícias e Eventos<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Pessoal
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Docentes</a>
+            <a class="dropdown-item" href="#">Funcionários</a>
+            <a class="dropdown-item" href="#">Planos de Trabalho</a>
+        </li>
+        <li class="nav-item active dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Ensino
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Bacharelado</a>
+            <a class="dropdown-item" href="#">Horários de Aula</a>
+            <a class="dropdown-item" href="#">Associação Estudantil</a>
+            <a class="dropdown-item" href="#">Informações Úteis</a>
+            <a class="dropdown-item" href="#">Pós-graduação</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="http://www.decom.ufop.br/cocic" target="_blank">COCIC<span
+              class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="http://www.ufop.br/" target="_blank">UFOP<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="http://www.iceb.ufop.br/" target="_blank">ICEB<span
+              class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="http://www.decom.ufop.br/pos/" target="_blank">Pós-graduação<span
+              class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="http://www3.decom.ufop.br/decom/login/admin/" target="_blank">Área Restrita<span
+              class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+    <main>
+
+    <section id="corpoEx">
+      <h1>Docentes</h1>
+      <!-- main paragraph -->
+      <!-- Two column-type things -->
+      <article id="flex-container">
+
+        <div class="info_dos">
+          <div id='user'>
+            <picture>
+              <source media="(min-width:650px)" srcset="../images/user.png">
+              <source media="(min-width:465px)" srcset="../images/user.png">
+              <img src="../images/user.png">
+            </picture>
+          </div>
+          <section id="descricion">
+            <div>
+              <span class="celula2">
+                Anderson Almeida Ferreira
+              </span>
+            </div>
+            <div class="frame">
+              <p class="celula3">
+                Doutor em Ciência da Computação - Universidade Federal de Minas Gerais
+              </p>
+            </div>
+          </section>
+        </div>
+
+        <div class="desc">
+          <h2>
+            História
+          </h2>
+          <div class="frameAux">
+            <p >
+              Instituto de Ciências Exatas e Biológicas - Sala 340 <br/>
+              Áreas de interesse:<br/>
+              Teoria da Computação. Bibliotecas Digitais. Bancos de Dados. Gerência de Dados. Recuperação de Informação. Aprendizado de Máquina.
+            </p>
+          </div>
+        </div>
+
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <div id="footer_content">
+      <section id="footer_logo">
+        <a href="http://www.ufop.br/" target="_blank">
+          <img src="../images/logoUFOP.png">
+        </a>
+        <section id="footer_logo">
+        </section>
+        <section id="footer_text">
+          <p>Departamento de Computação | ICEB | Universidade Federal de Ouro Preto</p>
+          <p>Campus Universitário Morro do Cruzeiro | CEP 35400-000 | Ouro Preto - MG, Brasil</p>
+          <a id="telephone">
+            <i class="fa-solid fa-phone fa-2xl" style="color: #ffffff;"></i>
+            <p>+55 31 3559-1692</p>
+          </a>
+          <section id="footer_social_media">
+            <a id="email" class="social_link social_link_hover" href="mailto:decom@ufop.edu.br">
+              <i class="fa-regular fa-envelope fa-2xl" style="color: #ffffff;"></i>
+            </a>
+
+            <a id="instagram" class=" social_link social_link_hover" href="https://www.instagram.com/decom.ufop/"
+              target="_blank">
+              <i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i>
+            </a>
+          </section>
+        </section>
+    </div>
+  </footer>
+</body>
+
+</html>

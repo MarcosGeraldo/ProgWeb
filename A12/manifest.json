@@ -1,0 +1,17 @@
+{
+  "name" : "ImagensBR",
+  "version" :"1.0",
+  "description" : "",
+  "content_scripts":[
+    {
+      "matches": ["<all_urls>"],
+      "js":["page.js"]
+    }
+  ],
+  "icons":{
+    "16" : "Freddie.jfif",
+    "48" : "Freddie.jfif",
+    "128" : "Freddie.jfif"
+  },
+  "manifest_version" : 3
+}

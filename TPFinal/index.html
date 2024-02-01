@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="imagem/x-icon" href="images/iconDecom.ico" />
+  <title>Pagina DECOM</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"><img src="images/logoDECOM2.png"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            DECOM
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Chefia de Coordenação</a>
+            <a class="dropdown-item" href="#">Comunicação e Logo</a>
+            <a class="dropdown-item" href="#">Localização</a>
+            <a class="dropdown-item" href="#">Mapa do Campus</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Notícias e Eventos<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Pessoal
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Docentes</a>
+            <a class="dropdown-item" href="#">Funcionários</a>
+            <a class="dropdown-item" href="#">Planos de Trabalho</a>
+        </li>
+        <li class="nav-item active dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Ensino
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Bacharelado</a>
+            <a class="dropdown-item" href="#">Horários de Aula</a>
+            <a class="dropdown-item" href="#">Associação Estudantil</a>
+            <a class="dropdown-item" href="#">Informações Úteis</a>
+            <a class="dropdown-item" href="#">Pós-graduação</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="http://www.decom.ufop.br/cocic" target="_blank">COCIC<span
+              class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="http://www.ufop.br/" target="_blank">UFOP<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="http://www.iceb.ufop.br/" target="_blank">ICEB<span
+              class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="http://www.decom.ufop.br/pos/" target="_blank">Pós-graduação<span
+              class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="http://www3.decom.ufop.br/decom/login/admin/" target="_blank">Área Restrita<span
+              class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <header id="apresentacao">
+      <h1>Bem vindo ao DECOM</h1>
+      <h2>Departamento de Computação da Universidade Federal de Ouro Preto</h2>
+      <picture>
+        <source media="(min-width:650px)" srcset="images/principalBemVindoaoDecomImagem.png">
+        <source media="(min-width:465px)" srcset="images/principalBemVindoaoDecomImagem.png">
+        <img src="images/principalBemVindoaoDecomImagem.png">
+      </picture>
+
+      
+    </header>
+
+    <section id="horarios">
+      <div class="a_horarios">
+        <p>Horários de aulas</p>
+      <a href="http://www.ufop.br/" target="_blank" style="background-color: red;">
+        <img src="images/calendario.png">
+      </a>
+      </div>
+      <div class="a_horarios">
+        <p>Horários de atendimentos</p>
+      <a href="http://www.ufop.br/" target="_blank" style="background-color: green;">
+        <img src="images/quadro.jpg">
+      </a> 
+      </div>   
+    </section>
+
+    <section id="corpoEx">
+      <h1>Notícias e Eventos</h1>
+      <!-- main paragraph -->
+      <!-- Two column-type things -->
+      <section id="flex-container">
+
+        <div class="itens">
+          <div>
+            <picture>
+              <source media="(min-width:650px)" srcset="images/n1.png">
+              <source media="(min-width:465px)" srcset="images/n1.png">
+              <img src="images/n1.png">
+            </picture>
+          </div>
+          <div>
+            <span class="celula2">
+              Agenda defesas monografias DECOM 2022-2
+            </span>
+          </div>
+          <div class="frame">
+            <span class="celula3">
+              As bancas de defesas das disciplinas BCC392 - Monografia I e BCC393 - Monografia II, dos discentes do
+              DECOM.
+            </span>
+            <a>
+              <i class="fa-solid fa-angles-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="itens">
+          <div>
+            <picture>
+              <source media="(min-width:650px)" srcset="images/n2.png">
+              <source media="(min-width:465px)" srcset="images/n2.png">
+              <img src="images/n2.png">
+            </picture>
+          </div>
+          <div>
+            <span class="celula2">
+              Processo Seletivo - Vagas com bolsa para doutorado
+            </span>
+          </div>
+          <div class="frame">
+            <span class="celula3">
+              Processo Seletivo 2023/1 - Vagas com bolsa para doutorado.
+            </span>
+            <a>
+              <i class="fa-solid fa-angles-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="itens">
+          <div>
+            <picture>
+              <source media="(min-width:650px)" srcset="images/n3.png">
+              <source media="(min-width:465px)" srcset="images/n3.png">
+              <img src="images/n3.png">
+            </picture>
+          </div>
+          <div>
+            <span class="celula2">
+              Aula Magna do PPGCC, dia 24/03/2023 as 10:00
+            </span>
+          </div>
+          <div class="frame">
+            <span class="celula3">
+              Aula Magna do Programa de Pós-Graduação em Ciência da Computação - PPGCC, dia 24/03/2023 as 10:00.
+            </span>
+            <a>
+              <i class="fa-solid fa-angles-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="itens">
+          <div>
+            <picture>
+              <source media="(min-width:650px)" srcset="images/n4.png">
+              <source media="(min-width:465px)" srcset="images/n4.png">
+              <img src="images/n4.png">
+            </picture>
+          </div>
+          <div>
+            <span class="celula2">
+              Defesa de mestrado do discente Guilherme Lopes Silva
+            </span>
+          </div>
+          <div class="frame">
+            <span class="celula3">
+              Defesa de mestrado do discente Guilherme Lopes Silva, dia 07/03/2023, as 14:00.
+            </span>
+            <a>
+              <i class="fa-solid fa-angles-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="itens">
+          <div>
+            <picture>
+              <source media="(min-width:650px)" srcset="images/n5.png">
+              <source media="(min-width:465px)" srcset="images/n5.png">
+              <img src="images/n5.png">
+            </picture>
+          </div>
+          <div>
+            <span class="celula2">
+              Defesa de mestrado do discente Eduardo Chagas
+            </span>
+          </div>
+          <div class="frame">
+            <span class="celula3">
+              Defesa de mestrado do discente Eduardo Chagas, dia 01/03/2023, as 09:00.
+            </span>
+            <a>
+              <i class="fa-solid fa-angles-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="itens">
+          <div>
+            <picture>
+              <source media="(min-width:650px)" srcset="images/n6.png">
+              <source media="(min-width:465px)" srcset="images/n6.png">
+              <img src="images/n6.png">
+            </picture>
+          </div>
+          <div>
+            <span class="celula2">
+              Alocação das disciplinas 2023/1 - PPGCC
+            </span>
+          </div>
+          <div class="frame">
+            <span class="celula3">
+              Alocação das disciplinas 2023/1: As disciplinas do PPGCC 2023/1 acontecerão na semana...
+            </span>
+            <a>
+              <i class="fa-solid fa-angles-right"></i>
+            </a>
+          </div>
+        </div>
+
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <div id="footer_content">
+      <section id="footer_logo">
+        <a href="http://www.ufop.br/" target="_blank">
+          <img src="images/logoUFOP.png">
+        </a>
+        <section id="footer_logo">
+        </section>
+        <section id="footer_text">
+          <p>Departamento de Computação | ICEB | Universidade Federal de Ouro Preto</p>
+          <p>Campus Universitário Morro do Cruzeiro | CEP 35400-000 | Ouro Preto - MG, Brasil</p>
+          <a id="telephone">
+            <i class="fa-solid fa-phone fa-2xl" style="color: #ffffff;"></i>
+            <p>+55 31 3559-1692</p>
+          </a>
+          <section id="footer_social_media">
+            <a id="email" class="social_link social_link_hover" href="mailto:decom@ufop.edu.br">
+              <i class="fa-regular fa-envelope fa-2xl" style="color: #ffffff;"></i>
+            </a>
+
+            <a id="instagram" class=" social_link social_link_hover" href="https://www.instagram.com/decom.ufop/"
+              target="_blank">
+              <i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i>
+            </a>
+          </section>
+        </section>
+    </div>
+  </footer>
+</body>
+
+</html>
